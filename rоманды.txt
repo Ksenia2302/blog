@@ -1,0 +1,46 @@
+1. pip install django - установка фреймворка django
+2. django-admin startproject blog - создание проекта на django
+3. cd blog - перемещаемся в папку blog где находится файл manage.py
+4. python manage.py startapp app создание приложения с названием app
+
+blog/settings.py - настройки проекта
+
+5.  python manage.py makemigrations проверяем миграции
+6.  python manage.py migrate  процесс миграции в БД (база данных)
+7.  python manage.py runserver запуск сервера локального
+
+cntr + c - выход из сервера
+
+8. python manage.py createsuperuser - создание суперпользователя (админ)
+
+
+Процесс создание страницы
+1. Маршрут (urls.py в папке app)
+2. Создаем ф-цию, которая будет обрабатывать данный маршрут
+
+
+HTML (разметка )
+CSS (оформление сайта)
+
+
+
+#2
+Модели в Джанго
+Добавление моделей происходит в файле models.py
+
+После добавления моделей в models.py обязательно выполнять команды миграции
+python manage.py makemigrations проверяем миграции
+python manage.py migrate
+
+admin.py файл отвечает за админ-панель, какие модели будут доступны для редактирования в админке
+
+
+Создание страницы (КОнтакты)
+1. Маршрут
+http://127.0.0.1:8000/contacts из этого url маршрутом будет contacts
+Данный маршрут прописываем в urls.py (path('contacts', contacts))
+2. Создание функции в файле views.py
+3. Создание шаблона contacts.html в папке templates
+
+
+CSS каскадные таблицы стилей (задаем шрифт, фон, цвет, отступы, тень и т.д.)

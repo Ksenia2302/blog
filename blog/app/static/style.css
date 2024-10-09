@@ -1,0 +1,58 @@
+@font-face{
+    font-family: 'Domino Regular';
+    src: url('fonts/Domino Regular.otf');
+}
+
+body{
+    font-family: 'Domino Regular';
+    background-image: url('background.png');
+    background-size: 100%
+}
+
+table tr td a{
+    padding: 10px;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    border: 1px solid black
+}
+table tr td a:hover{
+    background-color: white;
+    color: black;
+
+}
+h1{
+    font-size: 44px;
+    text-shadow: 4px 4px 10px #eee
+}
+.news{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 100px
+}
+.news li{
+    display: block;
+    margin: 10px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 4px 4px 10px #666
+}
+.news li img{
+    height: 150px
+}
+.news li h3{
+    font-size: 30px
+}
+.btn{
+    background-color: green;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    border: 1px solid green
+}
+.btn:hover{
+    background-color: white;
+    color: green;
+}

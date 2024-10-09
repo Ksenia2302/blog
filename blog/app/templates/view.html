@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% block content %}
+    <h2 align="center">{{new.title}}</h2>
+     <p align="center">
+            <img src="/media/{{new.image}}" width="400px">
+        </p>
+    <p align="center"> {{new.full_text}}</p>
+    <p align="center">{{new.date_time}}</p>
+    <p align="center">
+       <a href="/">Вернуться назад</a>
+    </p>
+    <h4 align="center">Добавить комментарий</h4>
+<form action="" method="post" align="center">
+    {% csrf_token %}
+    <p>
+        <label>Имя:</label>
+        <input type="text" name="name">
+    </p>
+    <p>
+        <label>Комментарий:</label>
+        <input type="text" name="comment">
+    </p>
+    <p>
+        <button type="submit">Добавить комментарий</button>
+    </p>
+</form>
+{% endblock content %}
